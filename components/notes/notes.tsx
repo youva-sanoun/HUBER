@@ -55,6 +55,13 @@ function transformContent(content: string): string {
     .join("\n");
 }
 
+function truncateContent(content: string, maxLength: number): string {
+  if (content.length <= maxLength) {
+    return content;
+  }
+  return content.slice(0, maxLength) + "...";
+}
+
 export function Notes() {
   const [notes, setNotes] = useState<Note[]>([]);
   const [isCreating, setIsCreating] = useState(false);
@@ -139,7 +146,7 @@ export function Notes() {
               </CardTitle>
             </CardHeader>
             <CardContent className="flex-grow">
-              {renderContent(note.content)}
+              {renderContent(truncateContent(note.content, 200))}
             </CardContent>
             <CardFooter className="flex justify-between">
               <Badge variant="secondary">{note.category}</Badge>
