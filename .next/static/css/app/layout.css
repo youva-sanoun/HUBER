@@ -855,9 +855,6 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -978,9 +975,6 @@ video {
 }
 .h-\[400px\] {
   height: 400px;
-}
-.h-\[80vh\] {
-  height: 80vh;
 }
 .h-\[90vh\] {
   height: 90vh;
@@ -1574,10 +1568,6 @@ video {
 }
 .bg-transparent {
   background-color: transparent;
-}
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
 .fill-current {
   fill: currentColor;
